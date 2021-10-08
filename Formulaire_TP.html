@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="formulaire d'abonnement"/>
+	<meta name="viewport" content="width=device_width, initial-scale=1.0"/>
+	<meta name="keywords" content="formulaire, abonnement"/>
+		<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="Stylesheet-Formulaire_TP.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+	<title>Formulaire d'abonnement</title>
+</head>
+<body>
+	<header>
+		<span class="logo">
+			<img class="mymusic_ico" src="images/Logo_Music.png" alt="Logo My Music">
+			<h1>My Music</h1>
+		</span>
+		<span class="logs">
+			<span class="status"><img class="avatar" src="images/avatar.png">
+			<p class="status">Pseudo, <i>connecté</i></p></span>
+			<span class="links"><a class="account" href="http://moncompte.com" type="_blank">Mon compte</a>
+			<a class="logout" href="http://deconnecter.com" type="_blank">Déconnecter</a></span>
+		</span>
+	</header>
+	<main>
+		<fieldset id="outside">
+		<form name="Abonnement" action="#" enctype="multipart/form-data" method="post">
+			<legend><h2>Mon compte</h2></legend>
+		<fieldset id="inside"><div class="infos">
+			<legend><h3>Mes informations personnelles</h3></legend>
+			<label for="name" id="infos">Nom :</label>
+			<input type="text" id="infos" placeholder="mon nom..." autofocus>
+			<label for="nickname" id="infos">Prénom :</label>
+			<input type="text" id="infos" placeholder="mon prénom...">
+			<label for="mail" id="infos">Email :</label>
+			<input type="Email" id="infos" placeholder="mon adresse mail...">
+			<label for="birth" id="infos">Date de naissance :</label>
+			<input type="date" id="infos">
+			<label for="region" id="infos">Ma région :</label>
+			<input list="region-list" id="infos" placeholder="ma région...">
+				<datalist id="region-list">
+					<option value="Nord">
+					<option value="Sud">
+					<option value="Est">
+					<option value="Ouest">
+					<option value="Centre">
+				</datalist>
+			<label for="tel"id="infos">Téléphone :</label>
+			<input type="tel" id="infos" placeholder="mon téléphone...">
+			<label for="mdp" id="infos">Mot de passe :</label>
+			<input type="password" id="infos" placeholder="mon mot de passe..." minlength="6" maxlength="12">
+			<label for="mdp_bis" id="infos">Répétez votre mot de passe :</label>
+			<input type="password" id="infos" placeholder="mon mot de passe... ( encore )" minlength="6" maxlength="12">
+		</div></fieldset>
+		<fieldset id="inside"><div class="subscribe">
+			<legend><h3>Ma formule d'abonnement</h3></legend>
+			<table>
+				<tr>
+					<th id="none"></th>
+					<th id="sub"><input type="radio" name="formule" checked><br>Premium +</th>
+					<th id="sub"><input type="radio" name="formule"><br>Premium</th>
+					<th id="sub"><input type="radio" name="formule"><br>Discovery</th>
+				</tr>
+				<tr>
+					<td id="cat">Accès web</td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+				</tr>
+				<tr>
+					<td id="cat">Accès mobile</td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-not-ok.png"></td>
+				</tr>
+				<tr>
+					<td id="cat">Ecoute ilimitée</td>
+					<td id="data"><img id="icon" src="images/icon-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-not-ok.png"></td>
+					<td id="data"><img id="icon" src="images/icon-not-ok.png"></td>
+				</tr>
+				<tr>
+					<td id="cat">Tarifs</td>
+					<td id="data">11,99€<br>/mois</td>
+					<td id="data">5,99€<br>/mois</td>
+					<td id="data">1 mois<br>gratuit</td>
+				</tr>
+			</table>
+			<label class="check" for="news"><input type="checkbox" name="news">Recevoir nos newsletters</label>
+			<label class="check" for="partners"><input type="checkbox" name="partners">Recevoir les newsletters de nos partenaires</label>
+		</div></fieldset>
+		<div id="buttons">
+			<input type="reset" value="Annuler">
+			<input type="Submit" value=Valider>
+		</div>
+		</form>
+		</fieldset>
+	</main>
+	<footer>
+		<a class="footer" href="mailto:lourdezmarine@gmail.com">Contact</a>
+		<a class="footer" href="http://eni-ecole.fr">&copy; Marine Lourdez Training</a>
+	</footer>
+</body>
+</html>

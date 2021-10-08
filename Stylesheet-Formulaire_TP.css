@@ -1,0 +1,322 @@
+/*
+Title: StyleSheet_Formulaire_TP
+Version: 1.0
+Author: Kacy_
+Design: Kacy_
+Description: Practicing CSS styling
+Last Update: 09-02-2021
+
+/ STRUCTURE /
+
+body
+	header
+		logo
+		logs
+			status
+			links
+	main
+		account
+			infos
+			subscribe
+			buttons
+	footer
+
+[-> Sorted by Order
+
+/ TYPE /
+font-family: 'Raleway', sans-serif; -> ital,wght@0,300;0,600;1,300;1,600
+font-family: 'Josefin Sans', sans-serif; -> Light 300, Light 300 Italic, Medium 500
+
+/ COLORS /
+Dark blue #18282e
+Medium blue #31515e
+Saturated blue #2ab8f5
+Light blue #81c5e2
+-
+Orange #f15a24
+
+*/
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	height: min-content;
+	height: -moz-min-content;
+	width: auto;
+	background-color: #18282e;
+	padding: 20px;
+}
+
+span.logo {
+	flex-basis: content;
+}
+
+img.mymusic_ico {
+	display: inline;
+	width: 40px;
+	height: auto;
+	margin-right: 10px;
+}
+
+h1 {
+	display: inline;
+	vertical-align: bottom;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	color: white;
+	margin: 0px;
+}
+
+span.logs {
+	display: inline;
+	flex-basis: content;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+span.status {
+}
+
+img.avatar {
+	display: inline;
+	width: 25px;
+	height: auto;
+	margin-right: 10px;
+}
+
+p.status {
+	display: inline;
+	vertical-align: super;
+	margin: 0px;
+}
+
+span.links {
+	display: block;
+	margin-top: 5px;
+}
+
+a {
+	color: #2ab8f5;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.logout {
+	margin-left: 10px;
+}
+
+/* Main */
+main {
+	color: white;
+	background-color: #31515e;
+	background-image:url(images/background.png);
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: repeat;
+}
+
+fieldset#outside {
+	border-style: none;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	text-align: center;
+	color: #18282e;
+	letter-spacing: 2px;
+	text-shadow: 0px 1px 2px #2ab8f5;
+}
+
+fieldset#inside {
+	background-color: #18282e;
+	border-style: none;
+	box-shadow: 0px 1px 4px #2ab8f5;
+	border-radius: 15px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+h3 {
+	margin-top: 0px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 0px 1px 3px #2ab8f5;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+div.infos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div.subscribe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+label#infos {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 50px;
+	align-self: flex-start;
+}
+
+input {
+	padding: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color: white;
+	border-style: none;
+	border-radius: 5px;
+	background-color: #31515e;
+}
+
+input:focus {
+	background-color: #2ab8f5;
+	color: #18282e;
+}
+
+input#infos {
+	width: 400px;
+}
+
+/* Table */
+
+table {
+	margin-bottom: 10px;
+}
+
+tr, td, th {
+	/*border: 1px solid white;
+	border-radius: 5px;*/
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+}
+
+th#sub {
+	color: #2ab8f5;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+td#cat {
+	text-align: right;
+	color: white;
+	padding-right: 10px;
+}
+
+td#data {
+	color: #2ab8f5;
+	background-color: #31515e;
+	border-radius: 10px;
+}
+
+th#none {
+	border: none;
+	background-color: #18282e;
+}
+
+img#icon {
+	height: 25px;
+	width: auto;
+}
+
+label.check {
+	margin-top: 10px;
+}
+
+/* Buttons */
+
+div#buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+input[type=submit], input[type=reset] {
+	border: none;
+	cursor: pointer;
+	width: 120px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+input[type=reset] {
+	margin-right: 20px;
+	background-color: #18282e;
+	color: #2ab8f5;
+}
+
+input[type=reset]:hover, input[type=reset]:active {
+	background-color: #2ab8f5;
+	color: #18282e;
+}
+
+input[type=submit] {
+	background-color: #2ab8f5;
+	color: #18282e;
+}
+
+input[type=submit]:hover, input[type=submit]:active {
+	background-color: white;
+	color: #2ab8f5;
+	font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	height: min-content;
+	height: -moz-min-content;
+	width: auto;
+	background-color: #18282e;
+	padding: 20px;
+}
+
+a.footer {
+	font-weight: normal;
+	color: white;}
